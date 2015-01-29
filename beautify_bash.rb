@@ -42,7 +42,7 @@ module BeautifyBash
       ext_quote_string = ""
       here_string = ""
       output = []
-      data.each do |record|
+      data.each_line do |record|
          record.chomp!
          stripped_record = record.strip
          if(in_here_doc)
